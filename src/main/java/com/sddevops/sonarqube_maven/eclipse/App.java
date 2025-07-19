@@ -1,10 +1,11 @@
 package com.sddevops.sonarqube_maven.eclipse;
 
-/**
- * Hello world!
- */
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       Logger logger = Logger.getLogger(App.class.getName());
+       logger.log(Level.INFO, "Hello World");
     }
 }
